@@ -3,16 +3,16 @@
 from flask import Flask, render_template, request, Markup
 import numpy as np
 import pandas as pd
-# from utils.disease import disease_dic
+from my.disease import disease_dic
 from my.fertilizer import fertilizer_dic
 import requests
 import config
 import pickle
 import io
-# impogit push origin mainrt torch
-# from torchvision import transforms
+import torch
+from torchvision import transforms
 from PIL import Image
-# from utils.model import ResNet9
+from my.model import ResNet9
 # ==============================================================================================
 
 # -------------------------LOADING THE TRAINED MODELS -----------------------------------------------
@@ -58,11 +58,11 @@ disease_classes = ['Apple___Apple_scab',
                    'Tomato___Tomato_mosaic_virus',
                    'Tomato___healthy']
 
-# disease_model_path = 'models/plant_disease_model.pth'
-# disease_model = ResNet9(3, len(disease_classes))
-# disease_model.load_state_dict(torch.load(
-#     disease_model_path, map_location=torch.device('cpu')))
-# disease_model.eval()
+disease_model_path = 'models/plant_disease_model.pth'
+disease_model = ResNet9(3, len(disease_classes))
+disease_model.load_state_dict(torch.load(
+    disease_model_path, map_location=torch.device('cpu')))
+disease_model.eval()
 
 
 # Loading crop recommendation model
@@ -100,27 +100,27 @@ def weather_fetch(city_name):
         return None
 
 
-# def predict_image(img, model=disease_model):
-#     """
-#     Transforms image to tensor and predicts disease label
-#     :params: image
-#     :return: prediction (string)
-#     """
-#     transform = transforms.Compose([
-#         transforms.Resize(256),
-#         transforms.ToTensor(),
-#     ])
-#     image = Image.open(io.BytesIO(img))
-#     img_t = transform(image)
-#     img_u = torch.unsqueeze(img_t, 0)
+def predict_image(img, model=disease_model):
+    """
+    Transforms image to tensor and predicts disease label
+    :params: image
+    :return: prediction (string)
+    """
+    transform = transforms.Compose([
+        transforms.Resize(256),
+        transforms.ToTensor(),
+    ])
+    image = Image.open(io.BytesIO(img))
+    img_t = transform(image)
+    img_u = torch.unsqueeze(img_t, 0)
 
-#     # Get predictions from model
-#     yb = model(img_u)
-#     # Pick index with highest probability
-#     _, preds = torch.max(yb, dim=1)
-#     prediction = disease_classes[preds[0].item()]
-#     # Retrieve the class label
-#     return prediction
+    # Get predictions from model
+    yb = model(img_u)
+    # Pick index with highest probability
+    _, preds = torch.max(yb, dim=1)
+    prediction = disease_classes[preds[0].item()]
+    # Retrieve the class label
+    return prediction
 
 # ===============================================================================================
 # ------------------------------------ FLASK APP -------------------------------------------------
@@ -202,7 +202,7 @@ def fert_recommend():
     N = int(request.form['nitrogen'])
     P = int(request.form['phosphorous'])
     K = int(request.form['pottasium'])
-    # ph = float(request.form['ph'])
+    ph = float(request.form['ph'])
 
     df = pd.read_csv('Data/fertilizer.csv')
 

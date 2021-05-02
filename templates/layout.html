@@ -153,6 +153,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </head>
 
 <body>
+<!-- for translation purpose -->
+<div id="google_translate_element"></div>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<!-- Closing for translation purpose -->
 
 	<!-- Navigation -->
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top" style="background-color: #1C00ff00;">
@@ -196,7 +208,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<!-- logo -->
 			<h2 class="logo2 text-center">
 				<a href="{{ url_for('home') }}">
-				<img src="{{ url_for('static', filename='images/we.png') }}" class="img-fluid" style=" display: inline-block;
+				<img src="{{ url_for('static', filename='images/we.png') }}" class="img-fluid" style=" display: inline-block; width:auto; height:auto;
 				border: 0px;
 				background-color: transparent;"alt="">
 			</a></h2>
@@ -222,6 +234,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- move top icon -->
 	<a href="#home" class="move-top text-center"></a>
 	<!-- //move top icon -->
+
+	
 </body>
 
 </html>
