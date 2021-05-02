@@ -10,6 +10,7 @@ scikit-learn
 scipy
 sklearn
 threadpoolctl
+gunicorn==20.0.4
 # torch
 # torchvision
 Werkzeug==1.0.1
