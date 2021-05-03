@@ -372,7 +372,7 @@ li > a:only-child:after { content: ''; }
 }
 
 .banner-top {
-    background: url(../images/3.jpg) no-repeat center;
+    background: url(../images/s3.webp) no-repeat center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -721,10 +721,10 @@ p.footer-para {
     display: inline-block;
 }
 footer{
-    background:#211E20;
+    background:#1B181A;
 }
 .footercopy-social ul li a {
-    color: 211E20;
+    color: #1B181A;
     text-align: center;
 }
 
