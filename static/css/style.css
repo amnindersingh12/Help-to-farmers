@@ -372,7 +372,7 @@ li > a:only-child:after { content: ''; }
 }
 
 .banner-top {
-    background: url(../images/s3.webp) no-repeat center;
+    background: url(https://source.unsplash.com/1920x1080/?farmming,nature,farmers) no-repeat center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -380,32 +380,6 @@ li > a:only-child:after { content: ''; }
     -moz-background-size: cover;
 }
 
-.banner-top1 {
-    background: url(../images/1.jpg) no-repeat center;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-}
-
-.banner-top2 {
-    background: url(../images/5.jpg) no-repeat center;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-}
-
-.banner-top3 {
-    background: url(../images/2.jpg) no-repeat center;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-}
 
 .w3layouts-banner-info {
     padding-top: 16em;
@@ -434,20 +408,14 @@ li > a:only-child:after { content: ''; }
     vertical-align: middle;
 }
 
-.banner-top,
-.banner-top1,
-.banner-top2,
-.banner-top3 {
+.banner-top{
     min-height: 770px;
 }
 .overlay {
     min-height: 770px;
     background: rgba(0, 0, 0, 0.4);
 }
-.overlay1 {
-    min-height: 770px;
-    background: rgba(0, 0, 0, 0.5);
-}
+
 
 .button-style {
     padding: 15px 40px;
@@ -1213,12 +1181,12 @@ a.move-top {
 /*-- Responsive design --*/
 
 @media(max-width:1366px) {
-	.banner-top, .banner-top1, .banner-top2, .banner-top3,.overlay,.overlay1 {
+	.banner-top,.overlay {
 		min-height: 750px;
 	}
 }
 @media(max-width:1280px) {
-	.banner-top, .banner-top1, .banner-top2, .banner-top3,.overlay,.overlay1 {
+	.banner-top,.overlay{
 		min-height: 720px;
 	}
 }
@@ -1229,7 +1197,7 @@ a.move-top {
 	.w3layouts-banner-info {
 		padding-top: 14em;
 	}
-	.banner-top, .banner-top1, .banner-top2, .banner-top3,.overlay,.overlay1 {
+	.banner-top, .overlay {
 		min-height: 650px;
 	}
 	p.about-text {
@@ -1280,7 +1248,7 @@ a.move-top {
 		letter-spacing: 3px;
 		line-height: 25px;
 	}	
-	.banner-top, .banner-top1, .banner-top2, .banner-top3,.overlay,.overlay1 {
+	.banner-top,.overlay {
 		min-height: 600px;
 	}
 	.about-left h3 {
@@ -1415,7 +1383,7 @@ a.move-top {
 		font-size: 20px;
 		letter-spacing: 2px;
 	}
-	.banner-top, .banner-top1, .banner-top2, .banner-top3, .overlay, .overlay1 {
+	.banner-top, .overlay {
 		min-height: 570px;
 	}
 	.team-text h4 {
@@ -1442,7 +1410,7 @@ a.move-top {
 	.blog-left, .blog-middle {
 		margin-bottom: 2em;
 	}
-	.banner-top, .banner-top1, .banner-top2, .banner-top3, .overlay, .overlay1 {
+	.banner-top,  .overlay{
 		min-height: 520px;
 	}
 	.blog-grids {
@@ -1462,7 +1430,7 @@ a.move-top {
 	.w3layouts-banner-info h3 {
 		font-size: 2.2em;
 	}
-	.banner-top, .banner-top1, .banner-top2, .banner-top3, .overlay, .overlay1 {
+	.banner-top,  .overlay {
 		min-height: 500px;
 	}
 	.w3layouts-banner-info {
