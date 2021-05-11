@@ -12,6 +12,6 @@ scipy
 sklearn
 threadpoolctl
 gunicorn
-# torch
-# torchvision
+torch
+torchvision
 Werkzeug

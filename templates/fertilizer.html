@@ -1,10 +1,6 @@
 {% extends 'layout.html' %} {% block body %}
 
-<style>
-  html body {
-    background-color: rgb(206, 206, 228);
-  }
-</style>
+
 <!--Form Section-->
 <br /><br />
 <h2 style="text-align: center; margin: 0px; color: black">
@@ -14,7 +10,7 @@
 
 <div
   style="
-    width: 350px;
+ width: 400px;
     height: 40rem;
     margin: 0px auto;
     color: black;
@@ -62,7 +58,7 @@
         required
       />
     </div>
-    <!-- <div class="form-group">
+    <div class="form-group">
       <label for="ph" style="font-size: 17px"><b>ph level</b></label>
       <input
         type="text"
@@ -73,7 +69,7 @@
         style="font-weight: bold"
         required
       />
-    </div> -->
+    </div>
     <div class="form-group">
       <label for="crop" style="font-size: 17px"
         ><b>Crop you want to grow</b></label
@@ -113,20 +109,7 @@
     </div>
 
     <div class="d-flex justify-content-center">
-      <button
-        type="submit"
-        class="btn btn-info"
-        style="
-          color: black;
-          font-weight: bold;
-          width: 130px;
-          height: 50px;
-          border-radius: 12px;
-          font-size: 21px;
-        "
-      >
-        Predict
-      </button>
+      <button class="btn btn-lg btn-primary btn-block" type="submit" style="font-weight: bold;">Predict</button>
     </div>
   </form>
 </div>

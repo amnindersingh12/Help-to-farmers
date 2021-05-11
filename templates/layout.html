@@ -8,103 +8,6 @@
 	<!-- for-mobile-apps -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
-	<meta name="keywords" content="Agro Harvest Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-
-	<style>
-		html {
-			font-size: 1rem;
-		}
-
-		@media (min-width: 576px) {
-			html {
-				font-size: 1.25rem;
-			}
-		}
-
-		@media (min-width: 768px) {
-			html {
-				font-size: 1.5rem;
-			}
-		}
-
-		@media (min-width: 992px) {
-			html {
-				font-size: 1.75rem;
-			}
-		}
-
-		@media (min-width: 1200px) {
-			html {
-				font-size: 2rem;
-			}
-
-			html {
-				font-size: 1rem;
-			}
-
-			h1 {
-				font-size: 1.2rem;
-			}
-
-			h2 {
-				font-size: 1.1rem;
-			}
-
-			@media (min-width: 768px) {
-				html {
-					font-size: 1.1rem;
-				}
-
-				h1 {
-					font-size: 1.3rem;
-				}
-
-				h2 {
-					font-size: 1.2rem;
-				}
-			}
-
-			@media (min-width: 991px) {
-				html {
-					font-size: 1.2rem;
-				}
-
-				h1 {
-					font-size: 1.5rem;
-				}
-
-				h2 {
-					font-size: 1.4rem;
-				}
-			}
-
-			@media (min-width: 1200px) {
-				html {
-					font-size: 1.2rem;
-				}
-
-				h1 {
-					font-size: 1.7rem;
-				}
-
-				h2 {
-					font-size: 1.6rem;
-				}
-			}
-
-		}
-	</style>
-	<script>
-		addEventListener("load", function () {
-			setTimeout(hideURLbar, 0);
-		}, false);
-
-		function hideURLbar() {
-			window.scrollTo(0, 1);
-		}
-
-	</script>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -125,7 +28,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- css files -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel='stylesheet' type='text/css' />
+	
+		
+
+		<link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel='stylesheet' type='text/css' />
 	<!-- bootstrap css -->
 	<link href="{{ url_for('static', filename='css/style.css') }}" rel='stylesheet' type='text/css' />
 	<!-- custom css -->
@@ -142,16 +48,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		rel="stylesheet">
 	<!-- //google fonts -->
 
-	<style>
-		header {
-			background-color: rgba(30, 30, 30, 1);
-			margin-top: 0rem;
-			display: block;
-
-		}
-	</style>
-</head>
-
 <body>
 <!-- for translation purpose -->
 <div id="google_translate_element"></div>
@@ -167,11 +63,9 @@ function googleTranslateElementInit() {
 <!-- Closing for translation purpose -->
 
 	<!-- Navigation -->
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top" style="background-color: #1C00ff00;">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light static-top">
 		<div class="container">
-			<!-- <a class="navbar-brand" href="{{ url_for('home') }}">
-				<img src="{{ url_for('static', filename='images/logo.jpg') }}" style="width: 90px; height: 55px" alt="">
-			</a> -->
+
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
 				aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -202,39 +96,7 @@ function googleTranslateElementInit() {
 
 	{% block body %} {% endblock %}
 
-	<!-- footer -->
-	<footer class="text-center ">
-		<div class="container py-md-3"></div>
-			<!-- logo -->
-			<h2 class="logo2 text-center">
-				<a href="{{ url_for('home') }}">
-				<img src="{{ url_for('static', filename='images/we.png') }}" class="img-fluid" style=" display: inline-block; width:auto; height:auto;
-				border: 0px;
-				background-color: transparent;"alt="">
-			</a></h2>
-			<!-- //logo -->
-			<!-- address -->
-			<div class="contact-left-footer mt-4">
-
-
-
-
-
-			<a href="https://github.com/amnindersingh12/Project_2">Github</a>
-			
-			</div>
-			<!-- <p class="homelogo"> -->
-			<p>Made with ❤️ in India</p>
-			
-			
-		</div>
-	</footer>
-	<!-- //footer -->
-
-	<!-- move top icon -->
-	<a href="#home" class="move-top text-center"></a>
-	<!-- //move top icon -->
-
+	
 	
 </body>
 
