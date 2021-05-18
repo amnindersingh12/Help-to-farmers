@@ -1,14 +1,9 @@
 Flask
-# itsdangerous
 numpy
 pandas
 requests
 Pillow
-
-# scikit-learn
-
 sklearn
-# threadpoolctl
 gunicorn
 -f https://download.pytorch.org/whl/torch_stable.html
 torch==1.8.0+cpu 
