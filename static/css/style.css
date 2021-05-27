@@ -234,8 +234,8 @@ header {
 }
 
 .banner-top {
-  background: url(https://source.unsplash.com/1920x1080/?farmming,agriculture,nature)
-    no-repeat center;
+  background: url(https://source.unsplash.com/1920x1080/?farmming,agriculture)
+  no-repeat center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
