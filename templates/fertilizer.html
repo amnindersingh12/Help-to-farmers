@@ -8,6 +8,12 @@
 </h2>
 <br />
 
+{% if error %}
+<div class="alert alert-danger" style="max-width: 540px; margin: 0 auto 12px auto;">
+  {{ error }}
+</div>
+{% endif %}
+
 <div
   style="
  width: 400px;
@@ -27,6 +33,7 @@
         id="Nitrogen"
         name="nitrogen"
         placeholder="50"
+        value="{{ form_data.get('nitrogen', '') }}"
         style="font-weight: bold"
         required
       />
@@ -41,6 +48,7 @@
         id="Phosphorous"
         name="phosphorous"
         placeholder="50"
+        value="{{ form_data.get('phosphorous', '') }}"
         style="font-weight: bold"
         required
       />
@@ -54,6 +62,7 @@
         id="Pottasium"
         name="pottasium"
         placeholder="50"
+        value="{{ form_data.get('pottasium', '') }}"
         style="font-weight: bold"
         required
       />

@@ -7,6 +7,12 @@
   <br />
   <br>
 
+{% if error %}
+<div class="alert alert-danger" style="max-width: 540px; margin: 0 auto 12px auto;">
+  {{ error }}
+</div>
+{% endif %}
+
 <div style="
  width: 400px;
    height: 100rem;

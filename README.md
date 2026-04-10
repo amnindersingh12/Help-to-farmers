@@ -14,12 +14,32 @@ In this project we have presented the idea that how we can use ML/DL into farmin
 * Fertilizer recommendation
 
 
-# Following are the Steps to run this locally
-1. Run ***pip install git*** in your terminal.
-2. Run ***git clone https://github.com/amnindersingh12/Help-to-farmers.git***  to download this repository
-3. Run the following command to install dependencies
+## Local Setup
+1. Clone the repository:
+  ***git clone https://github.com/amnindersingh12/Help-to-farmers.git***
+2. Install dependencies:
   ***pip install -r requirements.txt***
-4. Run ***python app.py*** to run server.
-5. Voila !! Open the link in browser (firefox,chrome etc..) and enjoy !!
+3. Set your weather API key (OpenWeather):
+  ***export WEATHER_API_KEY=your_api_key_here***
+4. Run the app:
+  ***python app.py***
+
+## Improvements Implemented
+* Numeric form validation with friendly errors on crop and fertilizer forms.
+* Disease upload validation with clear user messages for missing/invalid files.
+* Lazy model loading and startup checks with explicit missing-file errors.
+* Structured logging for production troubleshooting.
+* Pinned dependency versions in ***requirements.txt***.
+* Gunicorn production configuration in ***gunicorn.conf.py***.
+* Automated endpoint tests in ***tests/test_endpoints.py***.
+
+## Run Tests
+***pytest -q***
+
+## Production Hosting (VM)
+* Service: ***help-to-farmers-web.service***
+* App bind: ***127.0.0.1:5002***
+* Public route: ***https://alreadytaken.me/projects/help-to-farmers/live/***
+* Project page: ***https://alreadytaken.me/projects/help-to-farmers/***
 
 
