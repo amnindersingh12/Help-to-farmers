@@ -6,7 +6,7 @@ Pillow==11.3.0
 scikit-learn==1.5.1
 gunicorn==23.0.0
 pytest==8.2.2
--f https://download.pytorch.org/whl/torch_stable.html
-torch==2.10.0+cpu
-torchvision==0.25.0+cpu
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.10.0
+torchvision==0.25.0
 Werkzeug==3.1.3
