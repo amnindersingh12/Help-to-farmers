@@ -4,7 +4,7 @@ pandas==2.2.2
 requests==2.34.2
 Pillow==13.0.0
 scikit-learn==1.9.1
-gunicorn==23.0.0
+gunicorn==27.0.1
 pytest==9.2.0
 --extra-index-url https://download.pytorch.org/whl/cpu
 torch==2.15.0+cpu
